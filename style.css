@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%); /* Stone 100 */
+  font-family: "Outfit", sans-serif;
+  color: hsl(30, 10%, 34%); /* Stone 600 - for paragraph text */
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 3rem;
+}
+h2,
+h3 {
+  color: hsl(14, 45%, 36%); /* Brown 800 */
+  font-family: "Young Serif", serif;
+}
+
+h1 {
+  color: hsl(24, 5%, 18%); /* Stone 900 */
+}
+.preparation-time {
+  font-size: 0.9rem;
+  width: 100%;
+  background-color: hsl(330, 100%, 98%); /* Rose 50 */
+  padding: 1.6rem 1.8rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+h2,
+h3 {
+  color: hsl(332, 51%, 32%);
+  margin-bottom: 0.7rem;
+}
+
+.ingredients-list,
+.instructions-list {
+  padding-left: 1.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.ingredients-list li,
+.instructions-list li {
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.ingredients-list,
+.instructions-list {
+  border-bottom: 1px solid rgb(207, 199, 199);
+}
+
+.time-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.description {
+  font-size: 0.8rem;
+  margin-bottom: 1.5rem;
+  /* text-wrap: wrap; */
+}
+
+.recipe-page {
+  background-color: hsl(0, 0%, 100%); /* White */
+  padding: 2rem;
+  margin: 0 auto;
+  max-width: 600px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.nutrition th {
+  text-align: left;
+  font-weight: 400;
+  color: hsl(30, 10%, 34%); /* Stone 600 */
+}
+.nutrition td {
+  font-weight: 700;
+  color: hsl(14, 45%, 36%);
+  padding: 0.8rem 0;
+}
+.nutrition tr {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+section {
+  margin-bottom: 2rem;
+}
