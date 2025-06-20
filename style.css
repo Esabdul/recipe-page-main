@@ -12,17 +12,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  padding: 3rem;
-}
-h2,
-h3 {
-  color: hsl(14, 45%, 36%); /* Brown 800 */
-  font-family: "Young Serif", serif;
+  min-block-size: 100dvh;
+  padding: 2rem 1rem;
+  overflow-x: hidden;
 }
 
 h1 {
   color: hsl(24, 5%, 18%); /* Stone 900 */
+  font-family: "Young Serif", serif;
 }
 .preparation-time {
   font-size: 0.9rem;
@@ -32,6 +29,7 @@ h1 {
   border-radius: 8px;
   margin-bottom: 1.5rem;
 }
+
 h2,
 h3 {
   color: hsl(332, 51%, 32%);
@@ -40,16 +38,41 @@ h3 {
 
 .ingredients-list,
 .instructions-list {
-  padding-left: 1.5rem;
-  padding-bottom: 0.5rem;
+  padding: 0 0 1.5rem 1.5rem;
   margin-bottom: 1.5rem;
 }
-.ingredients-list li,
+
 .instructions-list li {
   margin-bottom: 0.6rem;
   font-size: 0.9rem;
   line-height: 1.4;
+  border-radius: 8px;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
+
+.instructions-list li:hover {
+  background-color: hsl(330, 100%, 98%);
+  transform: scale(1.02);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  color: hsl(332, 51%, 32%); /* Rose 800 */
+}
+
+.ingredients-list li {
+  margin-bottom: 0.6rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.ingredients-list li:hover {
+  background-color: hsl(30, 18%, 87%);
+  transform: translateX(4px);
+  color: hsl(14, 45%, 36%);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
 .ingredients-list,
 .instructions-list {
   border-bottom: 1px solid rgb(207, 199, 199);
@@ -64,19 +87,25 @@ img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .description {
   font-size: 0.8rem;
   margin-bottom: 1.5rem;
-  /* text-wrap: wrap; */
 }
 
 .recipe-page {
   background-color: hsl(0, 0%, 100%); /* White */
-  padding: 2rem;
+  padding: clamp(1.5rem, 4vw, 2rem);
   margin: 0 auto;
   max-width: 600px;
+  width: 100%;
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -98,6 +127,16 @@ img {
 }
 .nutrition tr {
   border-bottom: 1px solid hsl(30, 18%, 87%);
+  transition: all 0.3s ease;
+}
+
+.nutrition tr:hover {
+  background-color: hsl(30, 54%, 95%);
+}
+.nutrition tr:hover td,
+.nutrition tr:hover th {
+  transform: scale(1.01);
+  transition: transform 0.3s ease;
 }
 
 section {
