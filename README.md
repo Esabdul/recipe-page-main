@@ -14,7 +14,6 @@ This is a solution to the Recipe page challenge on [Frontend Mentor](https://www
 - [What I learned](#what-i-learned)
 - [Continued development](#continued-development)
 - [Useful resources](#useful-resources)
-- [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
 ---
@@ -37,8 +36,8 @@ _Screenshot will be added soon._
 
 ## Links
 
-- **Solution URL:** [Add your GitHub repo link here]
-- **Live Site URL:** [Add your deployed site link here, e.g. via GitHub Pages or Netlify]
+- **Solution URL:** [https://github.com/Esabdul/recipe-page-main]
+- **Live Site URL:** [https://esabdul.github.io/recipe-page-main/]
 
 ---
 
@@ -96,14 +95,6 @@ In future projects, I want to:
 - [MDN Web Docs – HTML5 Semantic Elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
 - [CSS Tricks – A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [Frontend Mentor’s official style guide](https://www.frontendmentor.io/resources)
-
----
-
-## Author
-
-- **Name:** Abdul Subhan
-- **Frontend Mentor:** [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- **GitHub:** [@yourgithub](https://github.com/yourgithub)
 
 ---
 
