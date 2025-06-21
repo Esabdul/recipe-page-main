@@ -40,6 +40,7 @@ h3 {
 .instructions-list {
   padding: 0 0 1.5rem 1.5rem;
   margin-bottom: 1.5rem;
+  border-bottom: 1px solid rgb(207, 199, 199);
 }
 
 .instructions-list li {
@@ -73,11 +74,6 @@ h3 {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
 }
 
-.ingredients-list,
-.instructions-list {
-  border-bottom: 1px solid rgb(207, 199, 199);
-}
-
 .time-list {
   display: flex;
   flex-direction: column;
@@ -104,7 +100,7 @@ img:hover {
   background-color: hsl(0, 0%, 100%); /* White */
   padding: clamp(1.5rem, 4vw, 2rem);
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 37.5rem;
   width: 100%;
   height: auto;
   border-radius: 12px;
@@ -142,3 +138,11 @@ img:hover {
 section {
   margin-bottom: 2rem;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+  .ingredients-list li,
+  .instructions-list li {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  }
+}
+
